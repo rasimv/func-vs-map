@@ -76,7 +76,7 @@ function doMagic(magicDoc) {
 		sum1 += res.charCodeAt(0);
 	}
 	var fix2 = performance.now();
-	magicLog.value += "\nFunc: " + sum1 + "\t" + (fix2 - fix1);
+	magicLog.value += "\nFunc: " + sum1 + "\t" + Math.round(fix2 - fix1);
 
 	var sum2 = 0;
 	var fix3 = performance.now();
@@ -85,7 +85,7 @@ function doMagic(magicDoc) {
 		sum2 += res.charCodeAt(0);
 	}
 	var fix4 = performance.now();
-	magicLog.value += "\n Map: " + sum2 + "\t" + (fix4 - fix3);
+	magicLog.value += "\n Map: " + sum2 + "\t" + Math.round(fix4 - fix3);
 
 	var sum3 = 0;
 	var fix5 = performance.now();
@@ -94,7 +94,7 @@ function doMagic(magicDoc) {
 		sum3 += res.charCodeAt(0);
 	}
 	var fix6 = performance.now();
-	magicLog.value += "\nFunc: " + sum3 + "\t" + (fix6 - fix5);
+	magicLog.value += "\nFunc: " + sum3 + "\t" + Math.round(fix6 - fix5);
 
 	var sum4 = 0;
 	var fix7 = performance.now();
@@ -103,5 +103,5 @@ function doMagic(magicDoc) {
 		sum4 += res.charCodeAt(0);
 	}
 	var fix8 = performance.now();
-	magicLog.value += "\n Map: " + sum4 + "\t" + (fix8 - fix7);
+	magicLog.value += "\n Map: " + sum4 + "\t" + Math.round(fix8 - fix7);
 }
